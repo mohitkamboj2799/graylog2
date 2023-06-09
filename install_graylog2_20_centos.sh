@@ -101,7 +101,6 @@ yum install -y mongo-10gen-server && /etc/init.d/mongod start
 # Waiting for MongoDB to start accepting connections on tcp/27017
 echo "!!!*** Waiting for MongoDB to start accepting connections ***!!!"
 echo "This could take a while so connection timeouts below are normal!"
-while ! nc -vz localhost 27017; do sleep 1; done
 
 # Install graylog2-server
 echo "Installing graylog2-server"
